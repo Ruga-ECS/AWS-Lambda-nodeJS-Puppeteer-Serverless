@@ -1,9 +1,12 @@
-service: canary-aws-lambda-puppeteer
+service: aws-node-puppeteer
 provider:
   name: aws
    
   ##profile: <AWSLambdaFullAccess> 
   runtime: nodejs12.x
+#stage: dev
+#region: us-east-1
+#role: arn:aws:iam::499870337613:role/serverless
   
 plugins:
   - serverless-offline
@@ -14,11 +17,14 @@ package:
     - node_modules/puppeteer/.local-chromium/**
 
 functions:
-  Canary:
-    handler: handler. Canary
-    memorySize: 1536MB
-    timeout: 30
-    events:
-      - http:
-          path: /
-          method: get
+  serverless:
+    handler: handler.Canary
+    #memorySize: 1536MB
+    #timeout: 30
+    #events:
+     # - http:
+      #    path: /
+       #   method: get
+
+          
+
