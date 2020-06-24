@@ -28,10 +28,6 @@ $ sls deploy
 ___________
 # About Project 
 
-When it comes to AWS Lambda function , they have their own limits as follows
-![AWS Limits](./images/aws_limits.png)
-So , When you try to use Puppeteer your deployment package size(unzipped)  easily go's above 250 mb because When you install Puppeteer, it downloads a recent version of Chromium (~170MB Mac, ~282MB Linux, ~280MB Win) that is guaranteed to work with the API.
-
 ## Solution 
 
 Best solution I found for this problem is using this awesome Serverless-framework Headless Chrome Plugin i.e 
