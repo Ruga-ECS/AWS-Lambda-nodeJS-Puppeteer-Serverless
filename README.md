@@ -35,9 +35,10 @@ $ git clone https://github.com/Battiatus/aws-node-puppeteer.git
 ```
 $ npm install 
 ```
-- Install Serverless
+- Install Serverless and Chocolatery
 ```
 $ npm install -g serverless
+$ choco install serverless
 ```
 
 ### To Deploy on AWS 
@@ -57,6 +58,69 @@ To be able to monitor your Serverless,you can create your account on Serverless
 $ serverless dashboard
 ```
 
+___________
+# Create a new project from zero
+
+You can create a new Serverless project without cloning this one.
+For that:
+
+- Install Serverless
+```
+$ npm install -g serverless
+```
+-Go to the emplacement you want to save your project
+
+```
+$ cd
+```
+
+-create the project from Serverless template
+
+```
+$ serverless create -t aws-nodejs
+```
+
+-Modify the serverless.yml and integrate your information
+
+```
+ service: aws-node-puppeteer
+ provider:
+  name: aws
+   
+  runtime: nodejs12.x
+
+  
+plugins:
+  - serverless-offline
+  - serverless-plugin-chrome
+  
+package:
+  exclude:
+    - node_modules/puppeteer/.local-chromium/**
+
+functions:
+  serverless:
+    handler: handler.Canary
+```
+- Update your handler.js with your required function and save
+
+- Add your profile AWS
+
+```
+$ serverless config credentials --provider aws --k <put your aws client key> --s <Put your secret key>
+```
+Now you can deploy your project on AWS lambda
+
+```
+$ sls deploy
+```
+ 
+___________
+# Deploy from your Github
+
+```
+$ serverless install --url https://github.com/pmuens/serverless-crud --name my-crud
+```
 ___________
 # About Project 
 
