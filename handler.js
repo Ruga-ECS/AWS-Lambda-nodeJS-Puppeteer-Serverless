@@ -2,7 +2,7 @@ const puppeteer = require('puppeteer');
 const { getChrome } = require('./chrome-script');
 
 module.exports.Canary = async (event) => {
-  const { url } = event.queryStringParameters;
+  const {  } = event.queryStringParameters;
   const chrome = await getChrome();
   const browser = await puppeteer.connect({
     browserWSEndpoint: chrome.endpoint,

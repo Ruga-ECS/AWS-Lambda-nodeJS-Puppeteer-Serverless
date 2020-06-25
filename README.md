@@ -1,18 +1,34 @@
 <!--
-title: 'Running Puppeteer on AWS Lambda'
+title: 'AWS Lambda deploying template for Puppeteer'
 description: 'This example shows you how to run Puppeteer on AWS Lambda'
 framework: v1
 platform: AWS
 language: nodeJS
-authorLink: 'https://github.com/emaildano'
-authorName: 'Daniel Olson'
-authorAvatar: 'https://avatars3.githubusercontent.com/u/1872327?v=4&s=140'
+authorLink: 'https://github.com/Battiatus'
+authorName: 'Ruga'
+
 -->
 
 ### Running Puppeteer on AWS Lambda Using Serverless Framework
 
-### Instructions to run locally 
+###Instruction to deploy on AWS through Serverless
 
+##Module and software needed
+
+- IDE (Visual Studio, Notepad++, Sublime text...)
+- NodeJS
+- Administrator power on computer
+
+
+### Instructions 
+- Clone the project
+
+```
+$ git clone https://github.com/Battiatus/aws-node-puppeteer.git
+
+```
+
+- Open your terminal as "Administrator" if possible
 ```
 $ npm install 
 $ sls offline 
