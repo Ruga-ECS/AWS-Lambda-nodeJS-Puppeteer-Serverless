@@ -9,11 +9,11 @@ authorName: 'Ruga'
 
 -->
 
-Running Puppeteer on AWS Lambda Using Serverless Framework
+### Running Puppeteer on AWS Lambda Using Serverless Framework
 
-Instruction to deploy on AWS through Serverless
+### Instruction to deploy on AWS through Serverless
 
-Module and software needed
+### Module and software needed
 
 - IDE (Visual Studio, Notepad++, Sublime text...)
 - NodeJS
@@ -128,4 +128,4 @@ ___________
 
 You can now update the project by a dding your script into hander.js
 
-Good luck
+###  Good luck
