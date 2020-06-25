@@ -9,9 +9,11 @@ authorName: 'Ruga'
 
 -->
 
-### Running Puppeteer on AWS Lambda Using Serverless Framework
+# Running Puppeteer on AWS Lambda Using Serverless Framework
+___________
 
-### Instruction to deploy on AWS through Serverless
+## Instruction to deploy on AWS through Serverless
+___________
 
 ### Module and software needed
 
