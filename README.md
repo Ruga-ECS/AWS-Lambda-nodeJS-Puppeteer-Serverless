@@ -90,16 +90,7 @@ $ serverless create -t aws-nodejs
   name: aws
    
   runtime: nodejs12.x
-
-  
-plugins:
-  - serverless-offline
-  - serverless-plugin-chrome
-  
-package:
-  exclude:
-    - node_modules/puppeteer/.local-chromium/**
-
+    
 functions:
   serverless:
     handler: handler.Canary
